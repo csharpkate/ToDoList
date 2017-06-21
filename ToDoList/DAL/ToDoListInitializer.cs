@@ -22,12 +22,12 @@ namespace ToDoList.DAL
 
             var Persons = new List<Person>
             {
-                new Person {PersonName = "Ryan", CreateDate = DateTime.Now,},
-                new Person {PersonName = "Randy", CreateDate = DateTime.Now,},
-                new Person {PersonName = "LJ", CreateDate = DateTime.Now,},
-                new Person {PersonName = "Cory", CreateDate = DateTime.Now,},
-                new Person {PersonName = "Bruce", CreateDate = DateTime.Now,},
-                new Person {PersonName = "Richard", CreateDate = DateTime.Now,}
+                new Person {PersonFirstName = "Ryan", PersonLastName = "Smith",CreateDate = DateTime.Now,},
+                new Person {PersonFirstName = "Randy", PersonLastName = "Jones", CreateDate = DateTime.Now,},
+                new Person {PersonFirstName = "LJ", PersonLastName = "Miller", CreateDate = DateTime.Now,},
+                new Person {PersonFirstName = "Bruce", PersonLastName = "Johnson", CreateDate = DateTime.Now,},
+                new Person {PersonFirstName = "Ryan", PersonLastName = "Smith", CreateDate = DateTime.Now,},
+                new Person {PersonFirstName = "Ryan", PersonLastName = "Smith", CreateDate = DateTime.Now,}
             };
             var Team = new List<Team>
             {
@@ -36,6 +36,12 @@ namespace ToDoList.DAL
                 new Team{TeamName = "Blazers", TeamLeadFirstName = "Larry",TeamLeadLastName="Miller", CreateDate = DateTime.Now},
                 new Team{TeamName = "Cubs", TeamLeadFirstName = "Guy",TeamLeadLastName="Lombardi", CreateDate = DateTime.Now},
                 new Team{TeamName = "Yankees", TeamLeadFirstName = "Harry",TeamLeadLastName="Carey", CreateDate = DateTime.Now},
+            };
+            var Project = new List<Project>
+            {
+                new Project{ProjectName = "CleanUp", PersonId = 1 },
+                new Project{ },
+                new Project{ }
             };
         }
     }

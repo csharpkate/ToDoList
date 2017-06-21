@@ -8,6 +8,7 @@ namespace ToDoList.Models
         DateTime? DeleteDate { get; set; }
         DateTime? EditDate { get; set; }
         int PersonId { get; set; }
-        string PersonName { get; set; }
+        string PersonFirstName { get; set; }
+        string PersonLastName { get; set; }
     }
 }
