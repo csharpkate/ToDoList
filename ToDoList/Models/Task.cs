@@ -5,20 +5,14 @@ using System.Web;
 
 namespace ToDoList.Models
 {
-    public enum Priority
-    {
-        None, 
-        Trivial,
-        Regular,
-        Important,
-        Critical
-    }
+
     public class Task
     {
         public int TaskId { get; set; }
         public string TaskName { get; set; }
         public int CategoryId { get; set; }
-        public Priority ? Priority { get; set; }
+        public string Priority { get; set; }
+
         public int PersonId { get; set; }
         public int ? TeamId { get; set; }
         public DateTime ? StartDate { get; set; }
