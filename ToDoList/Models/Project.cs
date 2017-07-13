@@ -15,7 +15,7 @@ namespace ToDoList.Models
         public int TeamId { get; set; }
         public DateTime  ProjectStartDate { get; set; }
         public DateTime ? ProjectDueDate { get; set; }
-        public DateTime CreateDate { get; set; }
+        public DateTime ? CreateDate { get; set; }
         public DateTime DeleteDate { get; set; }
         public virtual Person Person { get; set; }
         public virtual Team Team { get; set; }
